@@ -32,8 +32,8 @@ then
 	case $RESPONSE_CODE in
 		300)
 			echo "Update success. Please wait 15 minutes for validation..."
-			# Records are published every 15 minutes. Wait for 16 minutes, and then proceed.
-			for (( i=0; i<16; i++ )); do
+			# Records are published every 15 minutes. Wait for 30 minutes, and then proceed.
+			for (( i=0; i<30; i++ )); do
 				echo "Minute" ${i}
 				sleep 60s
 			done
@@ -63,8 +63,8 @@ else
 	case $RESPONSE_CODE in
 		300)
 			echo "Addition success. Please wait 15 minutes for validation..."
-			# Records are published every 15 minutes. Wait for 16 minutes, and then proceed.
-			for (( i=0; i<16; i++ )); do
+			# Records are published every 15 minutes. Wait for 30 minutes, and then proceed.
+			for (( i=0; i<30; i++ )); do
 				echo "Minute" ${i}
 				sleep 60s
 			done
